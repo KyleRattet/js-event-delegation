@@ -10,4 +10,17 @@ $(document).on('ready', function() {
   });
 
 
+
+  // $('#all-todos').on('click', '.btn-danger', function(){
+  //   event.preventDefault();
+  //   $('li .btn-danger').remove();
+  // });
+
+  $("#all-todos").on('click','.btn-danger', function () {
+    $(this).parent().parent().remove();
+  });
+
+
+
+
 });
